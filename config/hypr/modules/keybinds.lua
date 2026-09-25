@@ -22,7 +22,7 @@ local mute = "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
 --bind = CTRL SHIFT, ESCAPE, exec, sysmontask
 
 -- Set Keybinds
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("brave"))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("MOZ_ENABLE_WAYLAND=1 librewolf"))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
